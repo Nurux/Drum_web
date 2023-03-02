@@ -1,0 +1,124 @@
+:root {
+    --color-lightmode: #0EBEFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('../imgs/background.jpg');
+    background-size: 100% auto;
+    max-height: 627px;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.355);
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 4rem;
+}
+
+.avatar img {
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid var(--color-lightmode);
+    border-radius: 2rem;
+}
+
+.avatar h3{
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    list-style: none;
+    margin-top: 0.9rem;
+}
+
+.menu ul li {
+    border-radius: 10rem;
+    padding: 0.5rem;
+    width: 1rem;
+    text-align: center;
+    margin: 0.5rem;
+    background-color: var(--color-lightmode);
+}
+
+.menu ul li i{
+    color: aliceblue;
+}
+
+.menu ul li:hover{
+    cursor: pointer;
+    background-color: #47cf72b7;
+}
+
+
+.pads {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 12rem;
+    background-color: rgba(0, 0, 0, 0.489);
+}
+
+.pads button{
+    margin: 0.5rem;
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    background: none;
+    color: white;
+    transition: all 0.07s;
+}
+
+.pads button p{
+    color: #ffd500;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+}
+
+.pads button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0.279);
+}
+
+.pads button.playing {
+    transform: scale(1.1);
+    border-color: darkorange;
+    box-shadow:
+              0 0 0.2rem darkorange,
+              0 0 0.3rem darkorange,
+              0 0 1.2rem darkorange,
+              inset 0 0 0.9rem darkorange;
+}
+
+
+@media screen and (min-width: 900px) {
+    .pads {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pads button {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .pads {
+        margin-top: 20rem;
+    }
+}

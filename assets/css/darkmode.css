@@ -1,0 +1,36 @@
+:root {
+    --color-darkmode: #47CF73;
+}
+
+.key.darkmode {
+    border: 3px solid var(--color-darkmode);
+    box-shadow:
+    0 0 0.2rem var(--color-darkmode),
+    0 0 0.3rem var(--color-darkmode),
+    0 0 1.2rem var(--color-darkmode),
+    inset 0 0 0.9rem var(--color-darkmode);
+}
+
+.key.darkmode p {
+    color: #3ce1e9;
+}
+
+.key.darkmode:hover{
+    background-color: rgba(255, 140, 0, 0.404);
+}
+
+.avatar.darkmode img{
+    border: 2px solid var(--color-darkmode);
+}
+
+.menu ul li.darkmode {
+    background: var(--color-darkmode);
+}
+
+.menu ul li.darkmode i{
+    color: #1E1F26;
+}
+
+.menu ul li.darkmode:hover {
+    background-color: #0ebfff9b;
+}
