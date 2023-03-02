@@ -1,6 +1,6 @@
 # 1 Desafio 30 dias JS
 ---
-[Site](https://nurux.github.io/Drum_web/)
+<a href="https://nurux.github.io/Drum_web/" target="_blank">Site</a>
 ---
 #### Criar uma pagina web que tenha função de bateria responsiva
 
